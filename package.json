@@ -1,0 +1,45 @@
+{
+  "name": "@eldrex/plugin-study-buddy",
+  "version": "1.0.0",
+  "description": "DevDiff Study Buddy plugin — explains ANY code in ANY language across 5 progressive levels",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://eldrexdelosreyesbula.github.io/devdiff-study-buddy/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EldrexDelosReyesBula/devdiff-study-buddy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EldrexDelosReyesBula/devdiff-study-buddy/issues"
+  },
+  "author": "Eldrex Delos Reyes Bula <eldrexdelosreyesbula@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "devdiff",
+    "devdiff-plugin",
+    "study-buddy",
+    "code-explainer",
+    "education",
+    "ai",
+    "css-explainer"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "@eldrex/plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.3.0",
+    "vitest": "^3.2.6"
+  }
+}
